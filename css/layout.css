@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	font-family: Arial;
+	color: grey;
+}
+
+h1 {
+	border-bottom: 3px solid grey;
+	padding: 15px 0px;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 15px 0;
+}
+
+ul > li {
+	padding: 15px 0px;
+}
+
+.spotify > ul > li:hover {
+	 -webkit-filter: saturate(105%);
+    filter: brightness(120%);
+	transition: 200ms filter;
+	cursor: pointer;
+}
+
+
