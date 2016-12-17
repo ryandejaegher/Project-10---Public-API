@@ -19,13 +19,15 @@ h1 {
 	padding: 15px 0px;
 }
 
+
 ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	align-content: center;
 	list-style: none;
-	padding: 15px 0;
+	padding: 15px 0px;
 }
 
 ul > li {
@@ -40,3 +42,15 @@ ul > li {
 }
 
 
+
+@media (min-width: 320px){
+	ul {
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 960px) {
+	ul {
+		justify-content: space-between;
+	}
+}
