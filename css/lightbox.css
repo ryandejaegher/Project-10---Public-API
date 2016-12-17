@@ -174,9 +174,19 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1em;
+text-align: justify;
+}
+
+.lb-caption p {
+	padding: 10px 10px;
+
+}
+
+.lb-caption span {
+	text-align: center;
 }
 
 .lb-data .lb-caption a {
