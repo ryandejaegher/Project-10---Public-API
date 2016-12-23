@@ -7,7 +7,7 @@ $(document).ready(function () {
   
   function displayAlbums(data){
     var html = '<ul>';
-	var artistHeader ='';  
+	var artistHeader =''; 
     $.each(data.tracks, function(i, eachTrack){
 	  console.log(eachTrack.name);	
       html += '<li>';
@@ -15,23 +15,18 @@ $(document).ready(function () {
       html += '<img src="' + eachTrack.album.images[1].url + '"data-lightbox="albums">';
 	  html += '</a>';	
       html += '</li>';
-	  artistHeader = 'Top Tracks From ' + eachTrack.album.artists[0].name + ' in Canada';	
+	  artistHeader = 'Top Tracks From ' + eachTrack.album.artists[0].name + ' in Canada';
+	  	
 	  console.log(eachTrack.name);
     });
     html += '</ul>';
     $(".spotify").html(html);
 	$("h1").html(artistHeader); 
-
   }
 	
   $.getJSON(spotify,displayAlbums);
 /*});*/
-	
-	$(".spotify a").click(function (event) {
-		event.preventDefault();
-		var href = $(this).attr("href");
-		console.log(spotify);
-	});
+
 	
 //// Lightbox Options	
 	lightbox.option ({
